@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 960 620"
+     font-family="Helvetica, Arial, sans-serif">
+
+  <title>LL-N1 Reaction Chamber — Cross-Section</title>
+  <desc>Cross-sectional schematic of the Lytica Link (LL-N1) reaction chamber
+  for high-radiation lunar deployment. Shows the shielding sandwich (2 mm
+  outer lead jacket, 5 cm inner HDPE neutron moderator), the reaction
+  chamber, and the decameric catalyst core (two stacked pentameric rings).
+  Input: ammoniacal waste (NH3). Output: peptide-bonded organic nitrogen.</desc>
+
+  <defs>
+    <marker id="arrow-in" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f7a3a"/>
+    </marker>
+    <marker id="arrow-out" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4a8a"/>
+    </marker>
+    <marker id="callout" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333"/>
+    </marker>
+    <linearGradient id="pb-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a5d66"/>
+      <stop offset="100%" stop-color="#3a3d46"/>
+    </linearGradient>
+    <linearGradient id="hdpe-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8eaf4"/>
+      <stop offset="100%" stop-color="#a9cde0"/>
+    </linearGradient>
+    <linearGradient id="chamber-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff5d4"/>
+      <stop offset="100%" stop-color="#f2e4a6"/>
+    </linearGradient>
+    <radialGradient id="sub-grad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#f4a8a8"/>
+      <stop offset="60%" stop-color="#c74646"/>
+      <stop offset="100%" stop-color="#7a1f1f"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Title and subtitle -->
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#111">
+    LL-N1 Reaction Chamber — Cross-Section
+  </text>
+  <text x="480" y="60" text-anchor="middle" font-size="13" fill="#555">
+    Lytica Link Shielded Port for High-Radiation Lunar Deployment
+  </text>
+
+  <!-- =========================================================
+       SHIELDING SANDWICH (concentric rectangular layers)
+       Dimensions are not to scale: 2 mm Pb would be invisible next
+       to 5 cm HDPE at any drawable ratio. Layer thicknesses are
+       called out in the dimension labels to the left.
+       ========================================================= -->
+
+  <!-- Outer lead jacket (2 mm) -->
+  <rect x="170" y="130" width="620" height="380" rx="10" ry="10"
+        fill="url(#pb-grad)" stroke="#1e2028" stroke-width="1.5"/>
+
+  <!-- Inner HDPE layer (5 cm) -->
+  <rect x="200" y="160" width="560" height="320" rx="8" ry="8"
+        fill="url(#hdpe-grad)" stroke="#5a7a8a" stroke-width="1"/>
+
+  <!-- Reaction chamber (interior) -->
+  <rect x="250" y="210" width="460" height="220" rx="6" ry="6"
+        fill="url(#chamber-grad)" stroke="#8a7a30" stroke-width="1"/>
+
+  <!-- =========================================================
+       DECAMERIC CATALYST CORE: two stacked pentameric rings,
+       rendered in side view as two rows of five subunits.
+       ========================================================= -->
+
+  <!-- Ring A (top pentamer) -->
+  <g>
+    <text x="480" y="238" text-anchor="middle" font-size="11"
+          fill="#5a1a1a" font-style="italic">Ring A (pentamer)</text>
+    <circle cx="300" cy="278" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="370" cy="278" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="440" cy="278" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="510" cy="278" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="580" cy="278" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+  </g>
+
+  <!-- Ring B (bottom pentamer) -->
+  <g>
+    <circle cx="300" cy="358" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="370" cy="358" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="440" cy="358" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="510" cy="358" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <circle cx="580" cy="358" r="22" fill="url(#sub-grad)" stroke="#5a1a1a" stroke-width="1.2"/>
+    <text x="480" y="405" text-anchor="middle" font-size="11"
+          fill="#5a1a1a" font-style="italic">Ring B (pentamer)</text>
+  </g>
+
+  <!-- Ring-ring interface line -->
+  <line x1="260" y1="318" x2="620" y2="318" stroke="#5a1a1a"
+        stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- =========================================================
+       INPUT / OUTPUT FLOWS
+       ========================================================= -->
+
+  <!-- Input: Ammoniacal Waste (NH3) entering from the left -->
+  <path d="M 50 318 L 245 318"
+        stroke="#1f7a3a" stroke-width="3" fill="none" marker-end="url(#arrow-in)"/>
+  <text x="50" y="302" font-size="13" font-weight="600" fill="#1f7a3a">
+    Input flow
+  </text>
+  <text x="50" y="340" font-size="13" fill="#1a4a22">
+    Ammoniacal Waste (NH<tspan baseline-shift="sub" font-size="10">3</tspan>)
+  </text>
+
+  <!-- Output: Peptide-Bonded Organic N exiting to the right -->
+  <path d="M 715 318 L 910 318"
+        stroke="#1f4a8a" stroke-width="3" fill="none" marker-end="url(#arrow-out)"/>
+  <text x="910" y="302" text-anchor="end" font-size="13"
+        font-weight="600" fill="#1f4a8a">
+    Output flow
+  </text>
+  <text x="910" y="340" text-anchor="end" font-size="13" fill="#14305a">
+    Peptide-Bonded Organic N
+  </text>
+
+  <!-- =========================================================
+       LAYER CALLOUTS (left side)
+       ========================================================= -->
+
+  <!-- Pb callout -->
+  <line x1="90" y1="140" x2="168" y2="140"
+        stroke="#333" stroke-width="1" marker-end="url(#callout)"/>
+  <text x="40" y="136" font-size="12" font-weight="600" fill="#222">2 mm Pb</text>
+  <text x="40" y="152" font-size="10" fill="#555">outer jacket</text>
+
+  <!-- HDPE callout -->
+  <line x1="120" y1="170" x2="198" y2="170"
+        stroke="#333" stroke-width="1" marker-end="url(#callout)"/>
+  <text x="40" y="166" font-size="12" font-weight="600" fill="#222">5 cm HDPE</text>
+  <text x="40" y="182" font-size="10" fill="#555">neutron moderator</text>
+
+  <!-- Chamber callout -->
+  <line x1="150" y1="215" x2="248" y2="215"
+        stroke="#333" stroke-width="1" marker-end="url(#callout)"/>
+  <text x="40" y="212" font-size="12" font-weight="600" fill="#222">Reaction</text>
+  <text x="40" y="227" font-size="12" font-weight="600" fill="#222">Chamber</text>
+
+  <!-- =========================================================
+       RIGHT-SIDE CALLOUT (decamer)
+       ========================================================= -->
+
+  <line x1="790" y1="200" x2="712" y2="230"
+        stroke="#333" stroke-width="1" marker-end="url(#callout)"/>
+  <text x="800" y="196" font-size="12" font-weight="600" fill="#222">
+    Decameric Catalyst Core
+  </text>
+  <text x="800" y="212" font-size="10" fill="#555">
+    2 × pentamer (GSII, D5)
+  </text>
+  <text x="800" y="226" font-size="10" fill="#555">
+    10 subunits / 10 active sites
+  </text>
+
+  <!-- =========================================================
+       FOOTER LEGEND
+       ========================================================= -->
+
+  <g transform="translate(170 540)">
+    <text x="0" y="0" font-size="11" font-weight="700" fill="#222">Legend</text>
+
+    <rect x="60" y="-10" width="14" height="14"
+          fill="url(#pb-grad)" stroke="#1e2028"/>
+    <text x="80" y="1" font-size="11" fill="#333">Lead (Pb) — gamma/X-ray</text>
+
+    <rect x="240" y="-10" width="14" height="14"
+          fill="url(#hdpe-grad)" stroke="#5a7a8a"/>
+    <text x="260" y="1" font-size="11" fill="#333">HDPE — neutron moderator</text>
+
+    <rect x="430" y="-10" width="14" height="14"
+          fill="url(#chamber-grad)" stroke="#8a7a30"/>
+    <text x="450" y="1" font-size="11" fill="#333">Reaction chamber</text>
+
+    <circle cx="604" cy="-3" r="7" fill="url(#sub-grad)" stroke="#5a1a1a"/>
+    <text x="616" y="1" font-size="11" fill="#333">Lytica-1 subunit (Q43127)</text>
+  </g>
+
+  <text x="480" y="590" text-anchor="middle" font-size="10" fill="#777">
+    LL-N1 v1 · reference conditions: 70.3 kPa, 22 °C · shielding per docs/compliance_testing.md §4.1.1
+  </text>
+</svg>
