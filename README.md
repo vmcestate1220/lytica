@@ -1,4 +1,4 @@
-<img src="docs/banner.svg" alt="Project Lytica — Nitrogen Upcycling for Closed-Loop Habitats" width="100%"/><sub><sub><i>Metabolic NH<sub>3</sub> → decameric Lytica-1 catalyst (Q43127) → peptide-bonded organic N.</i></sub></sub>
+<img src="docs/banner.svg" alt="Project Lytica — Nitrogen Upcycling for Closed-Loop Habitats" width="100%"/><sub><i>Metabolic NH<sub>3</sub> → decameric Lytica-1 catalyst (Q43127) → peptide-bonded organic N.</i></sub>
 
 # Project Lytica
 
