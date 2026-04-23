@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.svg" alt="Project Lytica — Nitrogen Upcycling for Closed-Loop Habitats" width="100%"/>
+</p>
+
 # Project Lytica
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)
