@@ -1,5 +1,7 @@
 <p align="center">
   <img src="docs/banner.svg" alt="Project Lytica — Nitrogen Upcycling for Closed-Loop Habitats" width="100%"/>
+  <br>
+  <sub>The Lytica Link at a glance: metabolic NH<sub>3</sub> is converted through the decameric Lytica-1 catalyst core (Q43127 template) into peptide-bonded organic nitrogen for habitat bio-manufacturing.</sub>
 </p>
 
 # Project Lytica
