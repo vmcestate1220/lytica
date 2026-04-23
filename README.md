@@ -189,7 +189,7 @@ after cleavage of a 49-aa chloroplast transit peptide).
 
 Project Lytica technical office.
 
-- Maintainer contact: *fill in name* — `cc15000@gmail.com`
+- Maintainer: **Christopher Cocchiaraley** — `cc15000@gmail.com`
 - Contributions: open a pull request against the relevant artifact
   (mutation panel, simulator, or standards documents). Changes to the
   LL-N1 v1 standard require a formal amendment and revision bump.
